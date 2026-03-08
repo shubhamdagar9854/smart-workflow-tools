@@ -1,190 +1,162 @@
-# 🚀 Smart Workflow Tools
+# 🚀 Smart Workflow Tools - Microservices Collection
 
-A comprehensive collection of automation tools and productivity projects designed to streamline daily tasks, improve efficiency, and solve real-world problems. This repository brings together multiple practical applications that leverage modern technologies to make work and life easier.
+A comprehensive collection of production-ready microservices designed to streamline business processes, automate repetitive tasks, and enhance productivity through intelligent automation and AI-powered solutions.
 
-## 🌟 Why This Repository?
+## 🌟 Architecture Overview
 
-In today's fast-paced digital world, repetitive tasks and manual processes can consume valuable time and energy. This collection of tools addresses common pain points faced by professionals, developers, and businesses by providing automated solutions that are both powerful and easy to use.
+This repository implements a **microservices architecture** where each service is independently deployable, scalable, and maintainable. Each service follows industry best practices with proper API design, containerization, monitoring, and CI/CD pipelines.
+
+### 🏗️ Microservices Design Principles
+- **Single Responsibility**: Each service handles one specific business domain
+- **Independent Deployment**: Services can be deployed and scaled independently
+- **API-First**: RESTful APIs with comprehensive documentation
+- **Container-Ready**: Docker support with orchestrated deployments
+- **Observable**: Built-in monitoring, logging, and health checks
+- **Secure**: Authentication, authorization, and security best practices
 
 ---
 
-## 📦 Projects in this Repository
+## 📦 Microservices Catalog
 
-### 📧 Gmail to Google Sheets Automation
+### 📧 **Email Automation Service**
+**Service**: `gmail-sheets-service` | **Port**: 8000 | **Language**: Python
 
-**Problem Solved**: Manually copying important emails to spreadsheets for tracking and analysis is time-consuming and error-prone.
-
-**Solution**: An intelligent Python-based automation system that seamlessly reads your unread Gmail messages and automatically organizes them in Google Sheets.
+Automatically syncs Gmail messages to Google Sheets with intelligent parsing and duplicate prevention.
 
 **Key Features**:
-- 🔐 **Secure Authentication**: Uses OAuth 2.0 - no passwords stored anywhere
-- 🚫 **Duplicate Prevention**: Smart tracking ensures each email is logged only once
-- 📝 **Content Intelligence**: Converts HTML emails to clean, readable text
-- ⚡ **Set & Forget**: Runs automatically whenever you need it
-- 🛡️ **Error Handling**: Gracefully handles network issues and malformed emails
+- 🔐 OAuth 2.0 authentication with Google APIs
+- 📧 Real-time email processing and parsing
+- 📊 Intelligent data extraction and formatting
+- 🚫 Duplicate detection and prevention
+- 📈 Analytics and reporting capabilities
 
-**Perfect For**: Sales teams tracking client communications, HR monitoring applications, or anyone needing email analytics.
+**API Endpoints**: 15+ endpoints for sync management, email processing, and sheet operations
 
-**Technology Stack**: Python, Gmail API, Google Sheets API, OAuth 2.0
+**Technology Stack**: Python, FastAPI, Google APIs, Redis, PostgreSQL
 
 ---
 
-### 🤖 Smart Resume Scanner with AI
+### 🤖 **Resume Scanner Service**
+**Service**: `resume-scanner-service` | **Port**: 5000 | **Language**: Python
 
-**Problem Solved**: HR professionals and recruiters spend countless hours manually screening resumes and matching them to job descriptions.
-
-**Solution**: An AI-powered resume analysis system that uses Google Gemini AI with Retrieval-Augmented Generation (RAG) to automatically analyze resumes, generate professional summaries, and perform intelligent job matching.
+AI-powered resume analysis with RAG (Retrieval-Augmented Generation) for continuous learning and job matching.
 
 **Key Features**:
-- 📄 **Multi-format Support**: Processes PDF and DOCX files seamlessly
-- 🧠 **AI Learning System**: Learns from admin feedback to continuously improve accuracy
-- 🎯 **Smart Matching**: Uses semantic understanding, not just keyword matching
-- 📊 **Professional Dashboard**: Modern admin interface with feedback system
-- 🔍 **Detailed Analysis**: Extracts skills, experience, education, and achievements
-- 📈 **Performance Tracking**: System gets smarter with each correction
+- 🧠 Google Gemini AI integration for intelligent analysis
+- 📚 RAG system that learns from admin feedback
+- 🎯 Semantic job matching and candidate scoring
+- 📄 Multi-format support (PDF, DOCX)
+- 📊 Comprehensive analytics and reporting
 
-**Perfect For**: HR departments, recruitment agencies, and hiring managers looking to streamline their recruitment process.
+**API Endpoints**: 20+ endpoints for resume processing, AI analysis, job matching, and RAG learning
 
-**Technology Stack**: Python, Flask, Google Gemini AI, RAG Systems, SQLite, HTML/CSS/JavaScript
+**Technology Stack**: Python, Flask, Google Gemini AI, PostgreSQL, Redis, Vector Database
 
 ---
 
-### 📝 Cold Email Assistant
+### 📝 **Cold Email Service**
+**Service**: `cold-email-service` | **Port**: 3000 | **Language**: Node.js
 
-**Problem Solved**: Managing cold email campaigns manually is inefficient and difficult to track.
-
-**Solution**: A Node.js-based web application that simplifies cold email campaign management with an intuitive interface.
+Professional cold email campaign management with tracking, analytics, and automation capabilities.
 
 **Key Features**:
-- 🌐 **Web Interface**: User-friendly dashboard for email management
-- 📊 **Campaign Tracking**: Monitor email performance and responses
-- ⚡ **Quick Setup**: Simple installation and configuration
-- 🔄 **Easy Management**: Organize and track multiple campaigns
+- 📧 Campaign management and scheduling
+- 📊 Real-time tracking and analytics
+- 🎯 Personalization and A/B testing
+- 🔗 SMTP provider integration
+- 📈 Performance metrics and reporting
 
-**Perfect For**: Sales teams, marketers, and business development professionals.
+**API Endpoints**: 18+ endpoints for campaign management, email operations, and analytics
 
-**Technology Stack**: Node.js, Express, HTML, CSS, JavaScript
+**Technology Stack**: Node.js, Express, MongoDB, Redis, JWT Authentication
 
 ---
 
-### 🛠️ Development Practice & Utilities
+### 🛠️ **Development Tools Service**
+**Service**: `dev-tools-service` | **Port**: 4000 | **Language**: Node.js
 
-**Problem Solved**: Developers need various tools and utilities for testing, learning, and experimentation.
-
-**Solution**: A collection of development tools, experiments, and practice projects that serve various development needs.
+Swiss Army knife for developers with code generation, analysis, testing, and utility tools.
 
 **Key Features**:
-- 🔧 **Various Utilities**: Multiple tools for different development tasks
-- 🧪 **Testing Environment**: Safe space for experimentation
-- 📚 **Learning Projects**: Examples and implementations for skill development
-- ⚙️ **Configuration Tools**: Helpers for setup and configuration
+- 🔧 Code generation and scaffolding
+- 📊 Static code analysis and security scanning
+- 🧪 Automated test generation
+- 📝 Documentation generation
+- 🔄 Format conversion and validation
 
-**Perfect For**: Developers looking for utilities, learning resources, and testing environments.
+**API Endpoints**: 25+ endpoints for code generation, analysis, testing, and utilities
 
-**Technology Stack**: Node.js, various npm packages
+**Technology Stack**: Node.js, Express, AI APIs, Multiple Language Analyzers
 
 ---
 
-## 🛠️ Technologies & Frameworks
+## 🛠️ Technology Stack
 
 ### Backend Technologies
-- **Python**: Used for AI/ML applications and automation scripts
-- **Node.js**: Powers web applications and API integrations
-- **Flask**: Lightweight web framework for Python applications
+- **Python 3.9+**: FastAPI, Flask for AI and automation services
+- **Node.js 16+**: Express.js for web services and APIs
+- **PostgreSQL**: Primary database for structured data
+- **MongoDB**: Document storage for flexible schemas
+- **Redis**: Caching, session management, and job queues
 
 ### AI & Machine Learning
-- **Google Gemini AI**: Advanced AI model for intelligent analysis
+- **Google Gemini AI**: Advanced language model for intelligent analysis
 - **RAG Systems**: Retrieval-Augmented Generation for continuous learning
-- **Natural Language Processing**: For text analysis and understanding
+- **Vector Databases**: Semantic search and similarity matching
+- **Natural Language Processing**: Text analysis and understanding
 
 ### APIs & Integrations
-- **Gmail API**: For email access and management
-- **Google Sheets API**: For spreadsheet operations
-- **OAuth 2.0**: Secure authentication protocol
+- **Google Workspace**: Gmail API, Google Sheets API
+- **SMTP Providers**: Gmail, SendGrid, AWS SES
+- **Authentication**: OAuth 2.0, JWT, API Keys
 
-### Frontend Technologies
-- **HTML5/CSS3**: Modern web standards
-- **JavaScript**: Interactive web functionality
-- **Responsive Design**: Mobile-friendly interfaces
-
-### Database & Storage
-- **SQLite**: Lightweight database for local data storage
-- **File Systems**: For document and media handling
+### DevOps & Infrastructure
+- **Docker**: Containerization for all services
+- **Docker Compose**: Local development and orchestration
+- **GitHub Actions**: CI/CD pipelines
+- **Monitoring**: Health checks, metrics, and logging
 
 ---
 
-## 🚀 Getting Started Guide
+## 🚀 Quick Start
 
 ### Prerequisites
-- Python 3.7+ installed on your system
-- Node.js and npm installed
-- Google Account (for Gmail/Sheets integration)
-- Basic understanding of command line
+- Docker and Docker Compose
+- Node.js 16+ (for local development)
+- Python 3.9+ (for local development)
+- Google Cloud Project (for Gmail/Sheets integration)
 
-### Installation Steps
+### Using Docker Compose (Recommended)
 
-#### 1. Gmail to Google Sheets
 ```bash
-# Navigate to the project
-cd gmail-to-sheets
+# Clone the repository
+git clone https://github.com/shubhamdagar9854/smart-workflow-tools.git
+cd smart-workflow-tools
 
-# Install dependencies
-pip install -r requirements.txt
+# Start all services
+docker-compose up -d
 
-# Set up Google Cloud credentials
-# 1. Go to Google Cloud Console
-# 2. Enable Gmail API and Google Sheets API
-# 3. Create OAuth 2.0 credentials
-# 4. Download credentials.json to the project
+# Check service status
+docker-compose ps
 
-# Run the application
-python src/main.py
+# View logs
+docker-compose logs -f
+
+# Stop all services
+docker-compose down
 ```
 
-#### 2. Smart Resume Scanner
+### Individual Service Setup
+
+Each service can be run independently. Navigate to the service directory and follow the specific README instructions:
+
 ```bash
-# Navigate to the project
+# Example: Start Resume Scanner Service
 cd resume
-
-# Create virtual environment (recommended)
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
+source venv/bin/activate
 pip install -r requirements.txt
-
-# Set up Google Gemini API key
-# 1. Get API key from Google AI Studio
-# 2. Set environment variable or add to config
-
-# Run the application
 python app.py
-```
-
-#### 3. Cold Email Assistant
-```bash
-# Navigate to the project
-cd COLD-EMAIL
-
-# Install dependencies
-npm install
-
-# Run the application
-npm start
-# or
-node app.js
-```
-
-#### 4. Development Practice
-```bash
-# Navigate to the project
-cd practice
-
-# Install dependencies
-npm install
-
-# Run specific utilities as needed
-# Check individual project documentation
 ```
 
 ---
@@ -193,152 +165,352 @@ npm install
 
 ```
 smart-workflow-tools/
-├── gmail-to-sheets/                 # Gmail automation system
-│   ├── src/                        # Source code
-│   ├── credentials/                 # OAuth credentials
-│   ├── requirements.txt             # Python dependencies
-│   └── README.md                    # Project documentation
-├── resume/                          # AI resume scanner
-│   ├── static/                      # Frontend assets
-│   ├── templates/                   # HTML templates
-│   ├── uploads/                     # Resume uploads
-│   ├── app.py                       # Main Flask application
-│   ├── database.py                  # Database operations
-│   ├── rag_summary.py               # AI analysis module
-│   └── requirements.txt             # Python dependencies
-├── COLD-EMAIL/                      # Cold email assistant
-│   ├── public/                      # Static files
-│   ├── app.js                       # Main server file
-│   ├── package.json                 # Node.js dependencies
-│   └── README.md                    # Project documentation
-├── practice/                        # Development tools
-│   ├── routes/                      # API routes
-│   ├── views/                       # View templates
-│   ├── public/                      # Static assets
-│   ├── app.js                       # Main application
-│   └── package.json                 # Node.js dependencies
-└── README.md                        # This file
+├── gmail-to-sheets/              # Email Automation Service
+│   ├── src/                     # Source code
+│   ├── tests/                   # Test suite
+│   ├── Dockerfile               # Container definition
+│   ├── requirements.txt         # Python dependencies
+│   └── README.md               # Service documentation
+├── resume/                      # Resume Scanner Service
+│   ├── static/                  # Frontend assets
+│   ├── templates/               # HTML templates
+│   ├── uploads/                 # File uploads
+│   ├── app.py                   # Main Flask application
+│   ├── database.py              # Database operations
+│   ├── rag_summary.py           # AI analysis module
+│   ├── Dockerfile               # Container definition
+│   ├── requirements.txt         # Python dependencies
+│   └── README.md               # Service documentation
+├── COLD-EMAIL/                  # Cold Email Service
+│   ├── routes/                  # API routes
+│   ├── models/                  # Data models
+│   ├── middleware/              # Express middleware
+│   ├── app.js                   # Main Express application
+│   ├── Dockerfile               # Container definition
+│   ├── package.json             # Node.js dependencies
+│   └── README.md               # Service documentation
+├── practice/                    # Development Tools Service
+│   ├── services/                # Business logic
+│   ├── routes/                  # API routes
+│   ├── utils/                   # Utility functions
+│   ├── tests/                   # Test suite
+│   ├── app.js                   # Main Express application
+│   ├── Dockerfile               # Container definition
+│   ├── package.json             # Node.js dependencies
+│   └── README.md               # Service documentation
+├── docker-compose.yml           # Multi-service orchestration
+├── nginx.conf                   # Load balancer configuration
+└── README.md                    # This file
 ```
 
 ---
 
-## 🔧 Configuration & Setup
+## 🌐 Service URLs
+
+When running with Docker Compose, services are accessible at:
+
+- **Resume Scanner**: http://localhost:5000
+- **Cold Email Service**: http://localhost:3000
+- **Gmail Sheets Service**: http://localhost:8000
+- **Development Tools**: http://localhost:4000
+- **API Gateway**: http://localhost:80 (Nginx)
+
+### API Documentation
+Each service provides comprehensive API documentation:
+- **Swagger/OpenAPI**: `http://localhost:{port}/docs`
+- **Health Checks**: `http://localhost:{port}/health`
+- **Metrics**: `http://localhost:{port}/metrics`
+
+---
+
+## 🔧 Configuration
 
 ### Environment Variables
-Create `.env` files where needed:
+
+Create a `.env` file in the root directory:
 
 ```bash
-# For Gmail to Sheets
-GOOGLE_APPLICATION_CREDENTIALS=path/to/credentials.json
+# Google Cloud Configuration
+GOOGLE_APPLICATION_CREDENTIALS=./credentials/google-credentials.json
+GOOGLE_PROJECT_ID=your-project-id
 
-# For Resume Scanner
-GOOGLE_API_KEY=your_gemini_api_key
-FLASK_SECRET_KEY=your_secret_key
+# AI Services
+GOOGLE_API_KEY=your-gemini-api-key
+OPENAI_API_KEY=your-openai-api-key
 
-# For Cold Email Assistant
-PORT=3000
-NODE_ENV=development
+# Database Configuration
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=password
+POSTGRES_DB=smart_workflow
+
+# Redis Configuration
+REDIS_HOST=redis
+REDIS_PORT=6379
+
+# Security
+JWT_SECRET=your-super-secret-jwt-key
+API_KEY=your-api-key
+
+# Service Ports
+RESUME_SERVICE_PORT=5000
+COLD_EMAIL_SERVICE_PORT=3000
+GMAIL_SERVICE_PORT=8000
+DEV_TOOLS_SERVICE_PORT=4000
 ```
 
-### Google Cloud Setup
-1. **Create Project**: Go to [Google Cloud Console](https://console.cloud.google.com/)
-2. **Enable APIs**: Turn on Gmail API, Google Sheets API, and Google Gemini API
-3. **Create Credentials**: Generate OAuth 2.0 credentials for desktop applications
-4. **Download Credentials**: Save the JSON file in the appropriate project folder
+---
+
+## 📊 Monitoring & Observability
+
+### Health Monitoring
+All services include comprehensive health check endpoints:
+
+```bash
+# Check all services health
+curl http://localhost:5000/health
+curl http://localhost:3000/health
+curl http://localhost:8000/health
+curl http://localhost:4000/health
+```
+
+### Metrics Collection
+Each service exposes metrics for monitoring:
+
+- Request counts and response times
+- Error rates and types
+- Database connection status
+- External API health
+- Custom business metrics
+
+### Logging
+Structured logging with consistent format across all services:
+- JSON log format
+- Log levels (DEBUG, INFO, WARN, ERROR)
+- Request tracing with correlation IDs
+- Error stack traces and context
 
 ---
 
-## 🤝 Contributing Guidelines
+## 🔄 CI/CD Pipeline
 
-### How to Contribute
-1. **Fork the Repository**: Create your own copy of the project
-2. **Create a Branch**: Make a new branch for your feature
-3. **Make Changes**: Implement your improvements
-4. **Test Thoroughly**: Ensure everything works correctly
-5. **Submit Pull Request**: Explain your changes and submit for review
+### GitHub Actions Workflow
 
-### Contribution Areas
-- 🐛 **Bug Fixes**: Help us identify and fix issues
-- ✨ **New Features**: Suggest and implement new functionality
-- 📚 **Documentation**: Improve README files and code comments
-- 🧪 **Testing**: Add tests to improve code reliability
-- 🎨 **UI/UX**: Enhance user interfaces and user experience
+All services include automated CI/CD pipelines:
 
-### Code Standards
-- Follow existing code style and conventions
-- Add meaningful comments to complex code
-- Update documentation for any new features
-- Test your changes before submitting
+```yaml
+# .github/workflows/ci-cd.yml
+name: CI/CD Pipeline
 
----
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
 
-## 📋 Project Roadmap
+jobs:
+  test:
+    # Run unit and integration tests
+    # Code quality checks
+    # Security scanning
+  
+  build:
+    # Build Docker images
+    # Push to registry
+    # Security scanning of images
+  
+  deploy:
+    # Deploy to staging/production
+    # Health checks
+    # Rollback capabilities
+```
 
-### Upcoming Features
-- [ ] 📎 **Email Attachment Handling**: Process attachments in Gmail automation
-- [ ] 🎯 **Advanced Filtering**: Custom filtering rules for emails and resumes
-- [ ] 📊 **Analytics Dashboard**: Comprehensive analytics for all tools
-- [ ] 🌐 **Multi-language Support**: Support for different languages
-- [ ] ⏰ **Scheduled Tasks**: Automated scheduling for all tools
-- [ ] 🔗 **API Integration**: REST APIs for all tools
-- [ ] 📱 **Mobile App**: Mobile companion applications
+### Deployment Strategies
 
-### Long-term Vision
-- Create a unified dashboard for all tools
-- Add machine learning models for predictive analysis
-- Implement team collaboration features
-- Develop enterprise-grade security features
-- Create plugin system for extensibility
+1. **Development**: Local Docker Compose
+2. **Staging**: Automated deployment on develop branch
+3. **Production**: Manual approval with blue-green deployment
 
 ---
 
-## 🛡️ Security & Privacy
+## 🧪 Testing Strategy
+
+### Test Types
+- **Unit Tests**: Service-specific business logic
+- **Integration Tests**: API endpoints and database operations
+- **Contract Tests**: Inter-service communication
+- **End-to-End Tests**: Complete user workflows
+- **Load Tests**: Performance and scalability
+
+### Running Tests
+
+```bash
+# Run all tests across services
+docker-compose -f docker-compose.test.yml up --abort-on-container-exit
+
+# Run specific service tests
+cd resume && python -m pytest
+cd COLD-EMAIL && npm test
+cd practice && npm test
+```
+
+---
+
+## 📈 Scaling & Performance
+
+### Horizontal Scaling
+- Stateless service design
+- Load balancer configuration
+- Database connection pooling
+- Redis clustering
+
+### Performance Optimization
+- Response caching strategies
+- Database query optimization
+- Async processing for long-running tasks
+- CDN for static assets
+
+### Resource Management
+- Memory and CPU limits per service
+- Auto-scaling based on metrics
+- Graceful degradation under load
+
+---
+
+## 🔒 Security
+
+### Authentication & Authorization
+- JWT token-based authentication
+- API key management
+- OAuth 2.0 integration
+- Role-based access control
+
+### Security Best Practices
+- Input validation and sanitization
+- SQL injection prevention
+- XSS protection
+- CORS configuration
+- Rate limiting
+- Security headers (HSTS, CSP)
 
 ### Data Protection
-- 🔒 **No Password Storage**: Uses OAuth for secure authentication
-- 🛡️ **Local Data Processing**: Sensitive data processed locally when possible
-- 🔐 **Encrypted Communications**: All API communications use HTTPS
-- 📋 **Transparent Logging**: Clear logs for debugging without exposing sensitive data
-
-### Best Practices
-- Regular security audits and updates
-- Dependency vulnerability scanning
-- Secure coding practices
-- Privacy-first design principles
+- Encryption at rest and in transit
+- PII data handling
+- Audit logging
+- Compliance considerations
 
 ---
 
-## 📞 Support & Contact
+## 🤝 Contributing
+
+### Development Workflow
+1. Fork the repository
+2. Create a feature branch
+3. Make changes to specific service
+4. Add/update tests
+5. Ensure CI/CD passes
+6. Submit pull request
+
+### Adding New Services
+1. Create service directory
+2. Follow established patterns
+3. Add Dockerfile and docker-compose configuration
+4. Include comprehensive README
+5. Add tests and CI/CD
+6. Update main documentation
+
+### Code Standards
+- Follow language-specific style guides
+- Comprehensive error handling
+- Proper logging and monitoring
+- Security-first approach
+- Performance considerations
+
+---
+
+## 📋 Service Dependencies
+
+```mermaid
+graph TD
+    A[API Gateway/Nginx] --> B[Resume Scanner Service]
+    A --> C[Cold Email Service]
+    A --> D[Gmail Sheets Service]
+    A --> E[Dev Tools Service]
+    
+    B --> F[PostgreSQL]
+    B --> G[Redis]
+    B --> H[Google Gemini AI]
+    
+    C --> I[MongoDB]
+    C --> G
+    C --> J[SMTP Providers]
+    
+    D --> K[Google APIs]
+    D --> G
+    
+    E --> L[AI APIs]
+    E --> M[Code Analyzers]
+    
+    F --> N[Backups]
+    I --> N
+```
+
+---
+
+## 🛡️ Production Considerations
+
+### High Availability
+- Multi-instance deployment
+- Database replication
+- Load balancing
+- Failover mechanisms
+
+### Disaster Recovery
+- Automated backups
+- Point-in-time recovery
+- Infrastructure as code
+- Monitoring and alerting
+
+### Compliance
+- GDPR compliance
+- Data retention policies
+- Audit trails
+- Security assessments
+
+---
+
+## 📞 Support & Community
 
 ### Getting Help
-- 📖 **Documentation**: Check individual project README files
-- 🐛 **Issue Reporting**: Use GitHub Issues for bug reports
-- 💬 **Discussions**: Join GitHub Discussions for questions
-- 📧 **Email**: Contact directly at shubhamdagar9854@gmail.com
+- **Documentation**: Individual service READMEs
+- **Issues**: [GitHub Issues](https://github.com/shubhamdagar9854/smart-workflow-tools/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/shubhamdagar9854/smart-workflow-tools/discussions)
+- **Email**: shubhamdagar9854@gmail.com
 
-### Community
-- 🌟 **Star the Repository**: Show your support
-- 🍴 **Fork & Contribute**: Help improve the projects
-- 📢 **Share**: Spread the word about these tools
-- 💡 **Feedback**: Provide suggestions for improvements
+### Community Guidelines
+- Be respectful and inclusive
+- Provide detailed bug reports
+- Share improvements and suggestions
+- Help others in discussions
 
 ---
 
 ## 📄 License
 
-This project is open-source and available under the MIT License. You are free to use, modify, and distribute these tools for both personal and commercial purposes.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
 ## 👨‍💻 About the Developer
 
-Hi! I'm **Shubham Dagar**, a passionate developer who loves building practical automation tools that solve real-world problems. I believe in the power of automation to improve productivity and make life easier for everyone.
+Hi! I'm **Shubham Dagar**, a passionate developer specializing in microservices architecture, AI integration, and automation solutions. I believe in building scalable, maintainable systems that solve real-world problems.
 
-**My Philosophy**: 
-- Build tools that people actually need
-- Focus on simplicity and usability
-- Learn continuously and improve with feedback
-- Share knowledge and help others grow
+**Expertise**:
+- Microservices Architecture
+- AI/ML Integration
+- DevOps & Cloud Native
+- Automation & Productivity Tools
 
 **Connect With Me**:
 - 🐙 **GitHub**: https://github.com/shubhamdagar9854
@@ -349,15 +521,19 @@ Hi! I'm **Shubham Dagar**, a passionate developer who loves building practical a
 
 ## 🙏 Acknowledgments
 
-- **Google Cloud Platform**: For providing powerful APIs and services
-- **Open Source Community**: For amazing libraries and tools
-- **Contributors**: Everyone who has helped improve these projects
-- **Users**: Thank you for using and supporting these tools!
+- **Google Cloud Platform**: For powerful APIs and AI services
+- **Open Source Community**: For amazing tools and libraries
+- **Docker & Kubernetes**: For containerization revolution
+- **Contributors**: Everyone who helped improve these services
 
 ---
 
-*"The best automation is the kind that just works, quietly in the background, making your life easier without you even noticing it."* 🚀
+*"Building the future of work, one microservice at a time."* 🚀
 
 ---
 
-**⭐ If you find these tools helpful, please consider giving this repository a star! It helps others discover these projects and encourages continued development.**
+**⭐ If you find these microservices helpful, please consider giving this repository a star! It helps others discover these projects and supports continued development.**
+
+**🔄 Last Updated**: 2024-01-01  
+**🏷️ Version**: 2.0.0 (Microservices Architecture)  
+**👤 Maintainer**: Shubham Dagar
