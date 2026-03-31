@@ -1,0 +1,30 @@
+{
+  "name": "smart-workflow-master-controller",
+  "version": "1.0.0",
+  "description": "Master controller for all Smart Workflow Tools services",
+  "main": "master-controller.js",
+  "scripts": {
+    "start": "node master-controller.js",
+    "dev": "nodemon master-controller.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "master-controller",
+    "microservices",
+    "workflow",
+    "single-terminal",
+    "service-management"
+  ],
+  "author": "Smart Workflow Tools",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
